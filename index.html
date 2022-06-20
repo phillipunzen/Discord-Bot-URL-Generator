@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="./css/main.css" rel="stylesheet">
+    <title>Discord Bot Einladungsgenerator</title>
+  </head>
+  <body class="center-text">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Discord Bot Einladungsgenerator</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Startseite</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Anleitung</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+        <main class="form-signin">
+            <form style="text-align: center;" id="main-formular">
+                <h1 class="h3 mb-3 fw-normal">Link Generator</h1>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="applicationidTB" placeholder="4354367856346">
+                    <label for="floatingInput">Application ID</label>
+                </div>
+                <div class="radio mb-3">
+                    <p></p>
+                    <b>Berechtigungen</b><br>
+                    <input type="radio" value="8" id="radioPermissions" name="permissions"> Administrator
+                </div>
+                <div class="radio mb-3">
+                    <p></p>
+                    <b>Bereich</b><br>
+                    <input type="radio" value="bot" id="radioScope" name="scope"> Gesamt
+                </div>
+              <button class="w-100 btn btn-lg btn-primary" type="submit" id="submit-btn">Link generieren</button>
+              <p class="mt-5 mb-3 text-muted">©2022 Phillip Unzen</p>
+            </form>
+          </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./javascript/main.js"></script>  
+</body>
+</html>
